@@ -54,9 +54,10 @@
 <body>
     
     <div class="container">
+        <h1 class="mt-5">PHP Hotel</h1>
         <table class="table">
             <thead>
-                <tr class="col">
+                <tr>
                     <th>Nome</th>
                     <th>Descrizione</th>
                     <th>Parcheggio</th>

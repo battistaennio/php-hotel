@@ -53,14 +53,18 @@
 <body>
     
 <table>
+    <?php foreach($hotels as $valore => $proprieta): ?>
         <tr>
-            <?php foreach($hotels as $valore => $proprieta): ?>
-
-                <th><?php echo $valore ?></th>
-            <?php endforeach; ?>
-
+            <td><?php echo $proprieta['name'] ?></td>
+            <td><?php echo $proprieta['description'] ?></td>
+            <td><?php echo $proprieta['parking'] ? 'Si' : 'No' ?></td>
+            <td><?php echo $proprieta['vote'].'/5' ?></td>
+            <td><?php echo 'Km. '.$proprieta['distance_to_center'] ?></td>
         </tr>
+    <?php endforeach; ?>
+
 </table>
+
 
 </body>
 </html>
